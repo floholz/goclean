@@ -19,7 +19,7 @@ version: "3"
 services:
   goclean:
     container_name: "goclean"
-    image: floholz/goclean
+    image: floholz/goclean:1
     build:
       context: .
       dockerfile: Dockerfile
