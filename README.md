@@ -2,6 +2,7 @@
 [![GitHub tag (with filter)](https://img.shields.io/github/v/release/floholz/goclean?label=latest)](https://github.com/floholz/goclean/releases/latest)
 [![GitHub License](https://img.shields.io/github/license/floholz/goclean)](./LICENSE)
 [![GitHub go.mod Go version (subdirectory of monorepo)](https://img.shields.io/github/go-mod/go-version/floholz/goclean?logo=go&labelColor=gray&label=%20)](https://go.dev/dl/)
+[![Docker CI](https://github.com/floholz/goclean/actions/workflows/docker-ci.yml/badge.svg)](https://github.com/floholz/goclean/actions/workflows/docker-ci.yml)
 
 
 > Goclean is a tool written in golang, to clean up specified directories on a schedule. 
