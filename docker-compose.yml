@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  goclean:
+    container_name: "goclean"
+    ports:
+      - "1234:8778"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - GO_CLEAN_PATHS="/mnt/goclean/dir1;/mnt/goclean/dir2"
+      - GO_CLEAN_SCHEDULE="*/1 * * * *"
+      - GO_CLEAN_MAX_AGE=5m
+    volumes:
+      - ./testdir/dir1:/mnt/goclean/dir1
+      - ./testdir/dir2:/mnt/goclean/dir2
